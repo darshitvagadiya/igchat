@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div ng-if="isAuthenticated() && currentUser.username">
+    <ul id="messages"></ul>
+    <form id="chatForm">
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Enter message" id="msgInput">
+        <span class="input-group-addon"><button class="btn btn-primary">Send</button></span>
+      </div>
+    </form>
+  </div>
+
+  <div ng-if="!isAuthenticated()">
+    <div class="jumbotron">
+       <h2><i class="ion-chatboxes"></i>IG Chat</h2>
+    <p>This is a simple chat room for users to chat with other users of IG chat app.</p>
+    <p>To continue, please log in with your Instagram account or create a new email account.</p>
+    <p><a class="btn btn-primary btn-lg" href="#!/login" role="button">Log In</a>
+    <a class="btn btn-primary btn-lg" href="#!/signup" role="button">Sign up</a></p>
+    </div>
+  </div>
+
+  <div ng-if="isAuthenticated() && !currentUser.username" class="center-form panel">
+    <div class="panel-body">
+      <h5 class="text-center"><i class="ion-link"></i> Link Account</h5>
+      <p>To complete the registration process you must link your Instagram account.</p>
+      <button class="btn btn-block btn-instagram" ng-click="linkInstagram()">
+        <i class="ion-social-instagram"></i> Sign in with Instagram
+      </button>
+    </div>
+  </div>
+
+</div>

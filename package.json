@@ -1,0 +1,30 @@
+{
+  "name": "igchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://darshitvagadiya@bitbucket.org/darshitvagadiya/igchat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/darshitvagadiya/igchat#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.20.1",
+    "mongoose": "^5.0.3",
+    "nodemon": "^1.14.12",
+    "path": "^0.12.7",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.4"
+  }
+}
