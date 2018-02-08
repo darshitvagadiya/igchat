@@ -25,7 +25,7 @@ angular.module('igchat', ['ngRoute', 'ngMessages', 'satellizer'])
       name: 'instagram',
       url: 'http://newinstachat.herokuapp.com/auth/instagram',
       redirectUri: 'http://newinstachat.herokuapp.com/home',
-      clientId: '65f439be04b741bc862286c1bb630246',
+      clientId: 'dc4d6a7ecd0248e7a896434f86a816c3',
       requiredUrlParams: ['scope'],
       scope: ['public_content'],
       scopeDelimiter: '+',
