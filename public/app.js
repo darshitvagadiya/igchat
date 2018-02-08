@@ -19,12 +19,12 @@ angular.module('igchat', ['ngRoute', 'ngMessages', 'satellizer'])
             })
             .otherwise('/');
     
-    $authProvider.loginUrl = 'http://newinstachat.herokuapp.com/auth/login';
-    $authProvider.signupUrl = 'http://newinstachat.herokuapp.com/auth/signup';
+    $authProvider.loginUrl = 'https://newinstachat.herokuapp.com/auth/login';
+    $authProvider.signupUrl = 'https://newinstachat.herokuapp.com/auth/signup';
     $authProvider.oauth2({
       name: 'instagram',
-      url: 'http://newinstachat.herokuapp.com/auth/instagram',
-      redirectUri: 'http://newinstachat.herokuapp.com/home',
+      url: 'https://newinstachat.herokuapp.com/auth/instagram',
+      redirectUri: 'https://newinstachat.herokuapp.com/home',
       clientId: 'dc4d6a7ecd0248e7a896434f86a816c3',
       requiredUrlParams: ['scope'],
       scope: ['public_content'],
